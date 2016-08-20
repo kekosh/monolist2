@@ -4,6 +4,7 @@ class ItemsController < ApplicationController
 
   def new
     if params[:q]
+      #クラスの継承(::)
       response = RakutenWebService::Ichiba::Item.search(
         keyword: params[:q],
         imageFlag: 1,
