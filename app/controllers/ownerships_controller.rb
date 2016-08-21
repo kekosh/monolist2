@@ -37,6 +37,5 @@ class OwnershipsController < ApplicationController
     # Want itボタンが押された時には「Want」が設定されています。
     current_user.unwant(@item) if params[:type] == "Want"
     current_user.unhave(@item) if params[:type] == "Have"
-    
   end
 end
